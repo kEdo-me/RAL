@@ -1,0 +1,154 @@
+.header {
+  margin-bottom: 100px;
+  padding-top: 13px;
+}
+
+.logo-text {
+  font-family: myriad-pro-regular;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logo-orange-text {
+  color: rgb(254,98,36);
+  font-size: 50px;
+}
+
+.flag {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+
+.flag-content {
+  text-align: justify;
+}
+
+.flag-wrapper {
+  height: 40px;
+  border-top: 3px solid rgb(254,98,36);
+  border-bottom: 3px solid rgb(254,98,36);
+  display: inline;
+}
+
+@media(min-width:992px) {
+  .language-wrapper {
+    margin-top: 20px;
+  }
+
+  .color-catalog-text {
+    margin-top: 30px;
+  }
+
+  .table-content-container {
+    width: 100%;
+  }
+}
+
+@media(max-width:575px) {
+  .language-wrapper {
+    margin-top: 20px;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .table-text {
+    font-size: 23px !important;
+  }
+}
+
+.table-container {
+  margin-top: 30px !important;
+}
+
+.language-text {
+  font-family: myriad-pro-regular;
+  font-size: 16px;
+}
+
+.caption-text {
+  font-family: myriad-pro-regular;
+  font-size: 24px;
+}
+
+.table-warning {
+  margin-top: 15px;
+}
+
+.warning-text {
+  font-family: myriad-pro-regular;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.warning-red-text {
+  color: red;
+}
+
+.sample{
+    height: 40vh;
+}
+.sample-wrapper{
+    margin-top: 30px;
+}
+
+.ral-type {
+  font-family: myriad-pro-regular;
+  font-size: 24px;
+}
+.table-text {
+  font-family: myriad-pro-regular;
+  font-size: 36px;
+}
+
+.orange-table-block {
+  width: 15px;
+  height: 8px;
+  background-color: rgb(254,98,36);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 45%;
+}
+
+.orange-table-line {
+  width: 100%;
+  height: 8px;
+  background: -moz-linear-gradient(right, rgba(254,98,36,1) 20%, rgba(254,98,36,0) 100%);
+  background: -webkit-linear-gradient(right, rgba(254,98,36,1) 20%,rgba(254,98,36,0) 100%);
+  background: linear-gradient(to right, rgba(254,98,36,1) 20%,rgba(254,98,36,0) 100%);
+  position: relative;
+  top: 45%;
+}
+
+.recommended-product-container{
+  padding-bottom: 15px;
+}
+
+.recommended-product {
+  height: 250px;
+  border-radius: 15px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.34);
+}
+
+.paint-bucket {
+  width: 150px;
+  margin-top: 10px;
+}
+
+.firm-name {
+  font-family: myriad-pro-regular;
+  font-size: 20px;
+}
+
+.visit {
+  font-family: myriad-pro-regular;
+  font-size: 20px;
+  color:black;
+  cursor: pointer;
+}

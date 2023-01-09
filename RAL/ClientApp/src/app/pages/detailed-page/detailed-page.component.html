@@ -1,0 +1,91 @@
+<header class="header row">
+  <div class="d-flex col-lg-2 offset-lg-1 justify-content-center">
+    <span class="logo-text"(click)="redirectToMainPage()" ><span class="logo-orange-text">RAL</span>.com.ua</span>
+  </div>
+  <div class="d-flex justify-content-center col-sm-6 col-lg-4 offset-lg-1" style="vertical-align:central">
+    <span class="caption-text color-catalog-text" *ngIf="language=='EN'">COLOR CATALOG</span>
+    <span class="caption-text color-catalog-text" *ngIf="language=='UA'">КАТАЛОГ КОЛЬОРІВ</span>
+  </div>
+  <div class="language-wrapper d-flex justify-content-center col-6 col-sm-2 col-lg-1 offset-md-1">
+    <div id="en" class="flag-content" (click)="changeLanguage('EN')">
+      <img class="flag" src="../../assets/images/great-britain.png" />
+      <span class="language-text">EN</span>
+    </div>
+  </div>
+  <div class="language-wrapper d-flex justify-content-center col-6 col-sm-2 col-lg-1">
+    <div id="ua" class="flag-content flag-wrapper" (click)="changeLanguage('UA')">
+      <img class="flag" src="../../assets/images/ukraine.png" />
+      <span class="language-text">UA</span>
+    </div>
+  </div>
+</header>
+<div class="row">
+  <div class="col offset-md-1">
+    <span class="ral-type">RAL {{item?.code}} ({{item?.name}})</span>
+  </div>
+</div>
+<div class="row sample-wrapper">
+  <div class="col sample" style="background-color: {{item?.rgb}}">
+  </div>
+</div>
+<div class="row table-warning">
+  <div class="col col-xxl-7 offset-md-1 col-md-10">
+    <span class="warning-text" *ngIf="language=='EN'">
+      <span class="warning-red-text">Warning!</span> The colors on your monitor screen are VERY different from the printed originals due to color rendering.
+      <br />
+      This table cannot be used as an online catalog and is provided for illustrative purposes only.
+    </span>
+    <span class="warning-text" *ngIf="language=='UA'">
+      <span class="warning-red-text">Увага!</span> Кольори на екрані монітора ДУЖЕ відрізняються від надрукованих оригіналів через особливості передачі кольору.
+      <br />
+      Ця таблиця не може бути використана в якості онлайн-каталогу і надається виключно в ілюстративних цілях.
+    </span>
+  </div>
+</div>
+<div class="row table-container">
+  <div class="col-1">
+    <div class="orange-table-block">
+    </div>
+  </div>
+  <div class="col-8 col-lg-4 col-md-6">
+    <span class="table-text" *ngIf="language=='EN'">Recomended Products:</span>
+    <span class="table-text" *ngIf="language=='UA'">Рекомендовані продукти:</span>
+  </div>
+  <div class="col-2 col-md-4 col-lg-2 col-xxl-3">
+    <div class="orange-table-line"></div>
+  </div>
+</div>
+<div class="row recommended-product-container">
+  <div class="col-12 col-md-6 col-lg-3 gy-3">
+    <div class="recommended-product">
+      <img class="paint-bucket" src="../../../assets/images/paint.png" />
+      <p class="firm-name">Bianca RAL {{item?.code}} ({{item?.name}})</p>
+      <a class="visit" *ngIf="language=='EN'">visit site</a>
+      <a class="visit" *ngIf="language=='UA'">відвідати сайт</a>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3 gy-3">
+    <div class="recommended-product">
+      <img class="paint-bucket" src="../../../assets/images/paint.png" />
+      <p class="firm-name">Bianca RAL {{item?.code}} ({{item?.name}})</p>
+      <a class="visit" *ngIf="language=='EN'">visit site</a>
+      <a class="visit" *ngIf="language=='UA'">відвідати сайт</a>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3 gy-3">
+    <div class="recommended-product">
+      <img class="paint-bucket" src="../../../assets/images/paint.png" />
+      <p class="firm-name">Bianca RAL {{item?.code}} ({{item?.name}})</p>
+      <a class="visit" *ngIf="language=='EN'">visit site</a>
+      <a class="visit" *ngIf="language=='UA'">відвідати сайт</a>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3 gy-3">
+    <div class="recommended-product">
+      <img class="paint-bucket" src="../../../assets/images/paint.png" />
+      <p class="firm-name">Bianca RAL {{item?.code}} ({{item?.name}})</p>
+      <a class="visit" *ngIf="language=='EN'">visit site</a>
+      <a class="visit" *ngIf="language=='UA'">відвідати сайт</a>
+    </div>
+  </div>
+</div>

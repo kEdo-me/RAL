@@ -1,0 +1,39 @@
+.background-wrap {
+  position: relative;
+}
+
+.background-wrap:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  background-image: url(../assets/images/background.png);
+}
+
+.content {
+  position: relative;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 59px 36px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 4px 4px 59px 36px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 4px 59px 36px rgba(0, 0, 0, 0.15);
+  min-height: 100vh;
+}
+
+.footer {
+  height: 100px;
+  background-color: rgb(254,98,36);
+}
+
+.logo-text {
+  font-family: myriad-pro-regular;
+  font-size: 30px;
+  color: white;
+}
+
+.logo-bigger-text {
+  font-size: 50px;
+}

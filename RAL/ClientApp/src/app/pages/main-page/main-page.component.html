@@ -1,0 +1,98 @@
+<header class="header row">
+  <div class="d-flex col-lg-2 offset-lg-1 justify-content-center">
+    <span class="logo-text"><span class="logo-orange-text">RAL</span>.com.ua</span>
+  </div>
+  <div class="d-flex justify-content-center col-sm-6 col-lg-4 offset-lg-1" style="vertical-align:central">
+    <span class="caption-text color-catalog-text" *ngIf="language=='EN'">COLOR CATALOG</span>
+    <span class="caption-text color-catalog-text" *ngIf="language=='UA'">КАТАЛОГ КОЛЬОРІВ</span>
+  </div>
+  <div class="language-wrapper d-flex justify-content-center col-6 col-sm-2 col-lg-1 offset-md-1">
+    <div id="en" class="flag-content" (click)="changeLanguage('EN')">
+      <img class="flag" src="../../assets/images/great-britain.png" />
+      <span class="language-text">EN</span>
+    </div>
+  </div>
+  <div class="language-wrapper d-flex justify-content-center col-6 col-sm-2 col-lg-1">
+    <div id="ua" class="flag-content flag-wrapper" (click)="changeLanguage('UA')">
+      <img class="flag" src="../../assets/images/ukraine.png" />
+      <span class="language-text">UA</span>
+    </div>
+  </div>
+</header>
+<div class="row">
+  <div class="col-md-5 offset-md-1">
+    <div class="orange-block"></div>
+    <span class="caption-text" *ngIf="language=='EN'">What is RAL classic?</span>
+    <span class="caption-text" *ngIf="language=='UA'">Що таке RAL classic?</span>
+    <div class="description-container" *ngIf="language=='EN'">
+      <p class="description-text">German color standard, developed in 1927 by the State Committee for Supply Conditions at the request of paint manufacturers. The RAL Institute established a standard for the color space, dividing it into ranges and identifying each color with a single-digit number index. Numerous notations accompanying the color examples guarantee a clear and concise means of communication that is understandable in many areas of industry.</p>
+    </div>
+    <div class="description-container" *ngIf="language=='UA'">
+      <p class="description-text">Німецький стандарт кольору, розроблений у 1927 році Державним комітетом з умов постачання на прохання виробників лакофарбової продукції. Інститут RAL встановив стандарт для колірного простору, розділивши його на діапазони і позначивши кожен колір однозначним цифровим індексом. Численні позначення, що супроводжують приклади кольорів, гарантують чіткий і лаконічний засіб комунікації, зрозумілий у багатьох галузях промисловості.</p>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="orange-block"></div>
+    <span class="caption-text" *ngIf="language=='EN'">How does RAL palette work?</span>
+    <span class="caption-text" *ngIf="language=='UA'">Як працює палітра RAL?</span>
+    <div class="description-container">
+      <p class="description-text" *ngIf="language=='EN'">
+        Currently consists of 215 colors. Numbers are four-digit where 1xxx: yellow (30 pieces) 2xxx: orange (14 pieces) 3xxx: red (25 pieces) 4xxx: purple (12 pieces) 5xxx: blue (25 pieces) 6xxx: green (36 pieces) 7xxx: gray (38 pieces) 8xxx: brown (20 pieces) 9xxx: light and dark (15 pieces).
+      </p>
+      <p class="description-text" *ngIf="language=='EN'">
+        Only numerical color designations are legally binding. In contracts and normative documents, write the color in the following form: RAL XXXX (degree of gloss as in the catalog RAL K7/K5 (semi-matt/glossy) or as per sample/paint).
+      </p>
+    </div>
+    <div class="description-container" *ngIf="language=='UA'">
+      <p class="description-text">
+        Наразі складається з 215 кольорів. Номери чотиризначні, де 1ххх: жовтий (30 штук) 2ххх: помаранчевий (14 штук) 3ххх: червоний (25 штук) 4ххх: фіолетовий (12 штук) 5ххх: синій (25 штук) 6ххх: зелений (36 штук) 7ххх: сірий (38 штук) 8ххх: коричневий (20 штук) 9ххх: світлий і темний (15 штук).
+      </p>
+      <p class="description-text">
+        Юридично обов'язковими є тільки цифрові позначення кольорів. У договорах і нормативних документах колір записують за наступною формою: RAL XXXX (ступінь глянцю за каталогом RAL K7/K5 (напівматовий/глянцевий) або за зразком/фарбою).
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="row table-container">
+  <div class="col-1">
+    <div class="orange-table-block">
+    </div>
+  </div>
+  <div class="col-7 col-lg-4 col-md-6">
+    <span class="table-text" *ngIf="language=='EN'">Table of RAL colors:</span>
+    <span class="table-text" *ngIf="language=='UA'">Таблиця кольорів RAL:</span>
+  </div>
+  <div class="col-3 col-md-4 col-lg-2 col-xxl-3">
+    <div class="orange-table-line"></div>
+  </div>
+  <div class="col col-xxl-2 offset-md-1 col-lg-3">
+    <img class="search-icon" src="../../assets/images/search.png" />
+    <input (input)="onSearchChange($event)" class="search-field" type="text" id="search" name="search" placeholder="RAL" />
+  </div>
+</div>
+<div class="row table-warning">
+  <div class="col col-xxl-7 offset-md-1 col-md-10">
+    <span class="warning-text" *ngIf="language=='EN'">
+      <span class="warning-red-text">Warning!</span> The colors on your monitor screen are VERY different from the printed originals due to color rendering.
+      <br />
+      This table cannot be used as an online catalog and is provided for illustrative purposes only.
+    </span>
+    <span class="warning-text" *ngIf="language=='UA'">
+      <span class="warning-red-text">Увага!</span> Кольори на екрані монітора ДУЖЕ відрізняються від надрукованих оригіналів через особливості передачі кольору.
+      <br />
+      Ця таблиця не може бути використана в якості онлайн-каталогу і надається виключно в ілюстративних цілях.
+    </span>
+  </div>
+</div>
+
+<div class="table-content-container">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-5 col-lg-2 table-block" *ngFor="let item of ralFilteredItems" (click)="onTableBlockClicked(item.code)">
+      <span class="ral-text">RAL {{item.code}}</span>
+      <div class="ral-content" style="background-color: {{item.rgb}} ">
+      </div>
+    </div>
+  </div>
+</div>
